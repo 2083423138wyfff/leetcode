@@ -29,6 +29,7 @@ Systematic approach to algorithm problems with **Socratic teaching mode**. The a
 | "提示" / "给点提示" / "hint" / " clue" | Give a guiding hint without revealing the full answer |
 | Student provides their own analysis/answer | Enter **Evaluation Mode**: judge correctness, explain, correct misconceptions, then advance |
 | "跳过" / "next" / "下一步" | If the student has provided a valid answer, advance; otherwise, prompt them to try first |
+| Student pastes code (no explicit request for help) | Run tests and report only the raw error/output. Do NOT explain the cause, point to the line, or suggest how to fix unless the student says "不会" / "告诉我" / asks for a hint |
 
 ### Evaluation Mode (老师评测)
 
@@ -211,6 +212,15 @@ The goal is to help the student recognize patterns and transfer knowledge, not j
 ```
 
 Update the todo list after each step is completed.
+
+## Mistake Notebook (错题本)
+
+项目根目录维护 `错题本.md`，用于难题复盘。当学生说"记到错题本"，或某题错误较多、知识点较密集值得复盘时，往该文件**追加新一节**（不另建文件）。每节包含：
+
+- 核心思想（一句话精髓）
+- 涉及的知识点
+- 学生的错误点（按出现顺序，附纠正方法/自检口诀）
+- 正确代码
 
 ## Common Mistakes (Teacher's Reference)
 
